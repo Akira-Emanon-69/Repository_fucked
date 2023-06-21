@@ -1,0 +1,132 @@
+:root {
+    --cor-foda: bisque;
+    --cor-estranha: tomato;
+    --tamanho-padrao-fonte: 1.25rem;
+    --tamanho-padrao-fonte-largura: 37.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img.principal {
+    width: 55%;
+    margin: 0.5rem;
+    border-radius: 15%;
+}
+
+img.pequenas {
+    width: 10%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: var(--cor-foda);
+    font-family: 'major_mono_displayregular';
+}
+
+.nav {
+    padding: 2% 0% 0% 10%;
+}
+
+.nav_menu {
+    display: flex;
+    gap: 5%;
+}
+
+.nav_links {
+    font-size: var(--tamanho-padrao-fonte);
+    font-weight: var(--tamanho-padrao-fonte-largura);
+    color: var(--cor-foda);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor-estranha);
+}
+
+.apresentation {
+    flex-direction: flex;
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.titulo {
+    font-size: 1.9rem;
+}
+
+.texto {
+    font-size: var(--tamanho-padrao-fonte);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link_subtitulo {
+    font-weight: var(--tamanho-padrao-fonte-largura);
+    font-size: var(--tamanho-padrao-fonte);
+}
+
+.link {
+    border: 3px solid var(--cor-foda);
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: var(--tamanho-padrao-fonte);
+    font-weight: var(--tamanho-padrao-fonte-largura);
+    padding: 1.4rem 0;
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: var(--cor-estranha);
+}
+
+p.rodape {
+    padding: 0.625rem;
+    color: white;
+    background-color: var(--cor-estranha);
+    text-align: center;
+    font: var(--tamanho-padrao);
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        padding: 10%;
+    }
+
+    .nav_menu {
+        justify-content: center;
+    }
+
+    .apresentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+        }
+
+    .conteudo {
+        width: auto;
+    }
+}
